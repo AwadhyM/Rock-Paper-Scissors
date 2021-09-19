@@ -14,3 +14,22 @@ function playerPlay() {
     }
 }
 
+function playRound(playerSelection,computerSelection) {
+ if (playerSelection == "rock" && computerSelection == "Scissors") {
+     return console.log("You win! Rock beats Scissors!");
+ } else if (playerSelection == "scissors" && computerSelection == "Paper") {
+     return console.log("You win! Scissors beats Paper!");
+ } else if (playerSelection == "paper" && computerSelection == "Rock") {
+     return console.log("You win! Paper beats Rock!");
+ } else if (playerSelection == "scissors" && computerSelection == "Rock") {
+     return console.log("You lose! Rock beats Scissors!");
+ } else if (playerSelection == "paper" && computerSelection == "Scissors") {
+     return console.log("You lose! Scissors beats Paper");
+ } else if (playerSelection == "rock" && computerSelection == "Paper") {
+     return console.log("You lose! Paper beats Rock");
+ }
+}
+
+const playerSelection = "rock";
+const computerSelection = computerPlay();
+console.log(playRound(playerSelection, computerSelection));
