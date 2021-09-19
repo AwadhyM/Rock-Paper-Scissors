@@ -6,3 +6,12 @@ function computerPlay() {
     }
 }
 
+function playerPlay() {
+    let playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
+    let playerSelection = playerInput.toLowerCase();
+    if (playerSelection == "rock" || playerSelection == "paper" || playerSelection == "scissors") {
+        return "You played " + playerSelection;
+    }
+}
+
+console.log(playerPlay());
