@@ -14,4 +14,3 @@ function playerPlay() {
     }
 }
 
-console.log(playerPlay());
