@@ -3,8 +3,8 @@
  //let playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
  //let playerSelection = playerInput.toLowerCase();
  let computerSelection = computerPlay();   
- let playerScore = 0;
- let computerScore = 0;
+ //let playerScore = 0;
+ //let computerScore = 0;
 
 // Function for the computer to randomly generate a move.
 
@@ -13,11 +13,6 @@ function computerPlay() {
     let randomMove = [Math.floor(Math.random() * move.length)];
         return move[randomMove];
     }
-
-    console.log(computerSelection)
-    console.log(computerSelection)
-    console.log(computerSelection)
-
 
 
 // Function that plays a single round and returns a win/loss message 
@@ -40,14 +35,44 @@ function playRound (playerSelection, computerSelection) {
    }
 }
 
- //console.log(playerSelection);
- //console.log(computerSelection);
- //console.log(playRound(playerSelection, computerSelection));
-
-// game function which will within it invoke playRound
+//console.log(playRound(playerSelection, computerSelection));
 
 function game() {
-    let playerInput1 = prompt("Enter your move for Round 1: Rock, Paper or Scissors", "");
-    const computerSelection = computerPlay();
-    console.log(playRound(playerSelection,computerSelection));
+    playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
+    playerSelection = playerInput.toLowerCase();
+    computerSelection = computerPlay();
+    console.log( "You played the move " + playerSelection);
+    console.log( "Your opponent played the move " + computerSelection);
+    console.log(playRound(playerSelection, computerSelection));
+
+    playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
+    playerSelection = playerInput.toLowerCase();
+    computerSelection = computerPlay();
+    console.log( "You played the move " + playerSelection);
+    console.log( "Your opponent played the move " + computerSelection);
+    console.log(playRound(playerSelection, computerSelection));
+
+    playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
+    playerSelection = playerInput.toLowerCase();
+    computerSelection = computerPlay();
+    console.log( "You played the move " + playerSelection);
+    console.log( "Your opponent played the move " + computerSelection);
+    console.log(playRound(playerSelection, computerSelection));
+
+    playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
+    playerSelection = playerInput.toLowerCase();
+    computerSelection = computerPlay();
+    console.log( "You played the move " + playerSelection);
+    console.log( "Your opponent played the move " + computerSelection);
+    console.log(playRound(playerSelection, computerSelection));
+
+    playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
+    playerSelection = playerInput.toLowerCase();
+    computerSelection = computerPlay();
+    console.log( "You played the move " + playerSelection);
+    console.log( "Your opponent played the move " + computerSelection);
+    console.log(playRound(playerSelection, computerSelection));
 }
+
+console.log(game());
+
