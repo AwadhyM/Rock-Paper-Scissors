@@ -1,7 +1,5 @@
  // Global variables in order to pass parameters to the functions.
 
- //let playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
- //let playerSelection = playerInput.toLowerCase();
  let computerSelection = computerPlay();   
  let playerScore = 0;
  let computerScore = 0;
@@ -13,7 +11,6 @@ function computerPlay() {
     let randomMove = [Math.floor(Math.random() * move.length)];
         return move[randomMove];
     }
-
 
 // Function that plays a single round and returns a win/loss message 
 
@@ -52,28 +49,28 @@ function game() {
     playerSelection = playerInput.toLowerCase();
     computerSelection = computerPlay();
     console.log( `you played ${playerSelection}`);
-    console.log( `you played ${computerSelection}`);
+    console.log( `your opponent played ${computerSelection}`);
     console.log(playRound(playerSelection, computerSelection));
 
     playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
     playerSelection = playerInput.toLowerCase();
     computerSelection = computerPlay();
     console.log( `you played ${playerSelection}`);
-    console.log( `you played ${computerSelection}`);
+    console.log( `your opponent played ${computerSelection}`);
     console.log(playRound(playerSelection, computerSelection));
 
     playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
     playerSelection = playerInput.toLowerCase();
     computerSelection = computerPlay();
     console.log( `you played ${playerSelection}`);
-    console.log( `you played ${computerSelection}`);
+    console.log( `your opponent played ${computerSelection}`);
     console.log(playRound(playerSelection, computerSelection));
 
     playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
     playerSelection = playerInput.toLowerCase();
     computerSelection = computerPlay();
     console.log( `you played ${playerSelection}`);
-    console.log( `you played ${computerSelection}`);
+    console.log( `your opponent played ${computerSelection}`);
     console.log(playRound(playerSelection, computerSelection));
 
     gameWin(playerScore, computerScore);
