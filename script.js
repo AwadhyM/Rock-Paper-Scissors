@@ -3,8 +3,8 @@
  //let playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
  //let playerSelection = playerInput.toLowerCase();
  let computerSelection = computerPlay();   
- //let playerScore = 0;
- //let computerScore = 0;
+ let playerScore = 0;
+ let computerScore = 0;
 
 // Function for the computer to randomly generate a move.
 
@@ -19,19 +19,21 @@ function computerPlay() {
 
 function playRound (playerSelection, computerSelection) {
     if (playerSelection == "rock" && computerSelection == "scissors") {
-        return "You win! Rock beats Scissors!";
+        return `You win! Rock beats Scissors!, your score is now ${++playerScore}`;
     } else if (playerSelection == "scissors" && computerSelection == "paper") {
-        return "You win! Scissors beats Paper!";
+        return `You win! Scissors beats Rock!, your score is now ${++playerScore}`;
     } else if (playerSelection == "paper" && computerSelection == "rock") {
-        return "You win! Paper beats Rock!";
+        return `You win! Paper beats Rock!, your score is now ${++playerScore}`;
     } else if (playerSelection == "scissors" && computerSelection == "rock") {
-        return "You lose! Rock beats Scissors!";
+        return `You lose! Rock beats Scissors!, the computer's score is now ${++computerScore}`;
     } else if (playerSelection == "paper" && computerSelection == "scissors") {
-        return "You lose! Scissors beats Paper";
+        return `You lose! Scissors beats Paper!, the computer's score is now ${++computerScore}`;
     } else if (playerSelection == "rock" && computerSelection == "paper") {
-        return "You lose! Paper beats Rock";
+        return `You lose! Paper beats Rock!, the computer's score is now ${++computerScore}`;
    } else if (playerSelection == computerSelection) {
-       return  "It's a tie. You both drew the same move";
+       return  `It's a tie! You both drew the same move, your score is now ${++playerScore} and the computer's is ${++computerScore}`;
+   } else {
+       return `Invalid move! So we are giving this to the the computer whose score is now ${computerScore++}`;
    }
 }
 
@@ -44,6 +46,7 @@ function game() {
     console.log( "You played the move " + playerSelection);
     console.log( "Your opponent played the move " + computerSelection);
     console.log(playRound(playerSelection, computerSelection));
+    
 
     playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
     playerSelection = playerInput.toLowerCase();
@@ -75,4 +78,5 @@ function game() {
 }
 
 console.log(game());
+
 
