@@ -33,7 +33,7 @@ function playRound (playerSelection, computerSelection) {
    } else if (playerSelection == computerSelection) {
        return  `It's a tie! You both drew the same move, your score is now ${++playerScore} and the computer's is ${++computerScore}`;
    } else {
-       return `Invalid move! So we are giving this to the the computer whose score is now ${computerScore++}`;
+       return `Invalid move! So we are giving this to the the computer whose score is now ${++computerScore}`;
    }
 }
 
@@ -75,8 +75,16 @@ function game() {
     console.log( `you played ${playerSelection}`);
     console.log( `you played ${computerSelection}`);
     console.log(playRound(playerSelection, computerSelection));
+
+    gameWin(playerScore, computerScore);
+}
+
+function gameWin(playerScore, computerScore) {
+    if (playerScore > computerScore) {
+        return alert("Congratulations! You won this game of Rock, Paper, Scissors")
+    } else {
+        return alert("Better luck next time! You lost this game of Rock, Paper, Scissors")
+    }
 }
 
 console.log(game());
-
-
