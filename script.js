@@ -43,37 +43,37 @@ function game() {
     playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
     playerSelection = playerInput.toLowerCase();
     computerSelection = computerPlay();
-    console.log( "You played the move " + playerSelection);
-    console.log( "Your opponent played the move " + computerSelection);
+    console.log( `you played ${playerSelection}`);
+    console.log( `Your opponent played  ${computerSelection}`);
     console.log(playRound(playerSelection, computerSelection));
     
 
     playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
     playerSelection = playerInput.toLowerCase();
     computerSelection = computerPlay();
-    console.log( "You played the move " + playerSelection);
-    console.log( "Your opponent played the move " + computerSelection);
+    console.log( `you played ${playerSelection}`);
+    console.log( `you played ${computerSelection}`);
     console.log(playRound(playerSelection, computerSelection));
 
     playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
     playerSelection = playerInput.toLowerCase();
     computerSelection = computerPlay();
-    console.log( "You played the move " + playerSelection);
-    console.log( "Your opponent played the move " + computerSelection);
+    console.log( `you played ${playerSelection}`);
+    console.log( `you played ${computerSelection}`);
     console.log(playRound(playerSelection, computerSelection));
 
     playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
     playerSelection = playerInput.toLowerCase();
     computerSelection = computerPlay();
-    console.log( "You played the move " + playerSelection);
-    console.log( "Your opponent played the move " + computerSelection);
+    console.log( `you played ${playerSelection}`);
+    console.log( `you played ${computerSelection}`);
     console.log(playRound(playerSelection, computerSelection));
 
     playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
     playerSelection = playerInput.toLowerCase();
     computerSelection = computerPlay();
-    console.log( "You played the move " + playerSelection);
-    console.log( "Your opponent played the move " + computerSelection);
+    console.log( `you played ${playerSelection}`);
+    console.log( `you played ${computerSelection}`);
     console.log(playRound(playerSelection, computerSelection));
 }
 
