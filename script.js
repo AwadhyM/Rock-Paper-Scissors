@@ -1,8 +1,8 @@
  // Global variables in order to pass parameters to the functions.
 
- let playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
- let playerSelection = playerInput.toLowerCase();
- const computerSelection = computerPlay();   
+ //let playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
+ //let playerSelection = playerInput.toLowerCase();
+ let computerSelection = computerPlay();   
  let playerScore = 0;
  let computerScore = 0;
 
@@ -14,6 +14,9 @@ function computerPlay() {
         return move[randomMove];
     }
 
+    console.log(computerSelection)
+    console.log(computerSelection)
+    console.log(computerSelection)
 
 
 
@@ -37,9 +40,9 @@ function playRound (playerSelection, computerSelection) {
    }
 }
 
- console.log(playerSelection);
- console.log(computerSelection);
- console.log(playRound(playerSelection, computerSelection));
+ //console.log(playerSelection);
+ //console.log(computerSelection);
+ //console.log(playRound(playerSelection, computerSelection));
 
 // game function which will within it invoke playRound
 
