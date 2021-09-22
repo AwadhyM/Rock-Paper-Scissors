@@ -1,4 +1,5 @@
 Live demo here:
+https://awadhym.github.io/Rock-Paper-Scissors
 
 Rock Paper Scissors project. Currently just in console but will have GUI soon. 
 Date and time started: 19/09/2021, 12:00 
