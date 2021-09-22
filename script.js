@@ -1,3 +1,4 @@
+ 
  // Global variables in order to pass parameters to the functions.
 
  let computerSelection = computerPlay();   
