@@ -46,41 +46,15 @@ function playRound (playerSelection, computerSelection) {
 //console.log(playRound(playerSelection, computerSelection));
 
 function game() {
+
+    for (i = 0; i <= 5; i++) {
     playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
     playerSelection = playerInput.toLowerCase();
     computerSelection = computerPlay();
     console.log( `you played ${playerSelection}`);
     console.log( `Your opponent played  ${computerSelection}`);
     console.log(playRound(playerSelection, computerSelection));
-    
-
-    playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
-    playerSelection = playerInput.toLowerCase();
-    computerSelection = computerPlay();
-    console.log( `you played ${playerSelection}`);
-    console.log( `your opponent played ${computerSelection}`);
-    console.log(playRound(playerSelection, computerSelection));
-
-    playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
-    playerSelection = playerInput.toLowerCase();
-    computerSelection = computerPlay();
-    console.log( `you played ${playerSelection}`);
-    console.log( `your opponent played ${computerSelection}`);
-    console.log(playRound(playerSelection, computerSelection));
-
-    playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
-    playerSelection = playerInput.toLowerCase();
-    computerSelection = computerPlay();
-    console.log( `you played ${playerSelection}`);
-    console.log( `your opponent played ${computerSelection}`);
-    console.log(playRound(playerSelection, computerSelection));
-
-    playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
-    playerSelection = playerInput.toLowerCase();
-    computerSelection = computerPlay();
-    console.log( `you played ${playerSelection}`);
-    console.log( `your opponent played ${computerSelection}`);
-    console.log(playRound(playerSelection, computerSelection));
+    }
 
     gameWin(playerScore, computerScore);
 }
