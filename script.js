@@ -1,5 +1,13 @@
- 
- // Global variables in order to pass parameters to the functions.
+// loop for the alert
+
+let i = 0;
+
+while (i < 1) {
+    alert('Welcome to my game of Rock Paper Scissors. You will be playing against a computer. Follow the instructions of the screen to access the game!')
+ i++;
+}
+
+// Global variables in order to pass parameters to the functions.
 
  let computerSelection = computerPlay();   
  let playerScore = 0;
