@@ -2,10 +2,10 @@
 
 let i = 0;
 
-while (i < 1) {
+do {
     alert('Welcome to my game of Rock Paper Scissors. You will be playing against a computer. Follow the instructions of the screen to access the game!')
  i++;
-}
+} while (i < 1);
 
 // Global variables in order to pass parameters to the functions.
 
