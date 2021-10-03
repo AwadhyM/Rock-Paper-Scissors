@@ -43,21 +43,21 @@ function playRound (playerSelection, computerSelection) {
     }
 }
 
-//console.log(playRound(playerSelection, computerSelection));
+console.log(playRound(playerSelection, computerSelection));
 
-//function game() {
+function game() {
 
-  //  for (i = 0; i <= 5; i++) {
-   // playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
-    //playerSelection = playerInput.toLowerCase();
-    //computerSelection = computerPlay();
-    //console.log( `you played ${playerSelection}`);
-    //console.log( `Your opponent played  ${computerSelection}`);
-    //console.log(playRound(playerSelection, computerSelection));
-    //}
+    for (i = 0; i <= 5; i++) {
+    playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
+    playerSelection = playerInput.toLowerCase();
+    computerSelection = computerPlay();
+    console.log( `you played ${playerSelection}`);
+    console.log( `Your opponent played  ${computerSelection}`);
+    console.log(playRound(playerSelection, computerSelection));
+    }
 
-    //gameWin(playerScore, computerScore);
-//}
+    gameWin(playerScore, computerScore);
+}
 
 function gameWin(playerScore, computerScore) {
     if (playerScore > computerScore) {
