@@ -36,28 +36,28 @@ function playRound (playerSelection, computerSelection) {
         return `You lose! Scissors beats Paper!, the computer's score is now ${++computerScore}`;
     } else if (playerSelection == "rock" && computerSelection == "paper") {
         return `You lose! Paper beats Rock!, the computer's score is now ${++computerScore}`;
-   } else if (playerSelection == computerSelection) {
+    } else if (playerSelection == computerSelection) {
        return  `It's a tie! You both drew the same move, your score is now ${++playerScore} and the computer's is ${++computerScore}`;
-   } else {
+    } else {
        return `Invalid move! So we are giving this to the the computer whose score is now ${++computerScore}`;
-   }
+    }
 }
 
 //console.log(playRound(playerSelection, computerSelection));
 
-function game() {
+//function game() {
 
-    for (i = 0; i <= 5; i++) {
-    playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
-    playerSelection = playerInput.toLowerCase();
-    computerSelection = computerPlay();
-    console.log( `you played ${playerSelection}`);
-    console.log( `Your opponent played  ${computerSelection}`);
-    console.log(playRound(playerSelection, computerSelection));
-    }
+  //  for (i = 0; i <= 5; i++) {
+   // playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
+    //playerSelection = playerInput.toLowerCase();
+    //computerSelection = computerPlay();
+    //console.log( `you played ${playerSelection}`);
+    //console.log( `Your opponent played  ${computerSelection}`);
+    //console.log(playRound(playerSelection, computerSelection));
+    //}
 
-    gameWin(playerScore, computerScore);
-}
+    //gameWin(playerScore, computerScore);
+//}
 
 function gameWin(playerScore, computerScore) {
     if (playerScore > computerScore) {
