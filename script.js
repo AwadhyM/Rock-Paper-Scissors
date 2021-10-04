@@ -21,6 +21,25 @@ function computerPlay() {
         return move[randomMove];
     }
 
+const playerInputButtons = document.querySelectorAll('button');
+const playerButtonElement = document.getElementById('btn');
+
+playerInputButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+        const playerChoice = button.id;
+        const playerSelection = `"${playerChoice}"`
+        console.log(playerSelection);
+        console.log(playRound());
+    })
+});
+
+//buttons.forEach((button) => {
+  //  buttonElement.addEventListener('click', () => {
+  //      const playerSelection = document.querySelector()
+  //      playRound(playerSelection, computerSelection);
+  //  });
+// });
+
 // Function that plays a single round and returns a win/loss message 
 
 function playRound (playerSelection, computerSelection) {
@@ -43,21 +62,21 @@ function playRound (playerSelection, computerSelection) {
     }
 }
 
-console.log(playRound(playerSelection, computerSelection));
+//console.log(playRound(playerSelection, computerSelection));
 
-function game() {
+//function game() {
 
-    for (i = 0; i <= 5; i++) {
-    playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
-    playerSelection = playerInput.toLowerCase();
-    computerSelection = computerPlay();
-    console.log( `you played ${playerSelection}`);
-    console.log( `Your opponent played  ${computerSelection}`);
-    console.log(playRound(playerSelection, computerSelection));
-    }
+  //  for (i = 0; i <= 5; i++) {
+    //playerInput = prompt("Enter your move: Rock, Paper or Scissors", "");
+    //playerSelection = playerInput.toLowerCase();
+    //computerSelection = computerPlay();
+    //console.log( `you played ${playerSelection}`);
+    //console.log( `Your opponent played  ${computerSelection}`);
+    //console.log(playRound(playerSelection, computerSelection));
+    //}
 
-    gameWin(playerScore, computerScore);
-}
+ gameWin(playerScore, computerScore);
+
 
 function gameWin(playerScore, computerScore) {
     if (playerScore > computerScore) {
