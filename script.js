@@ -26,19 +26,15 @@ const playerButtonElement = document.getElementById('btn');
 
 playerInputButtons.forEach((button) => {
     button.addEventListener('click', (e) => {
-        const playerChoice = button.id;
-        const playerSelection = `"${playerChoice}"`
-        console.log(playerSelection);
-        console.log(playRound());
+        const playerSelection = button.id;
+        //playRound(playerSelection,computerSelection);
+        const resultsdiv = document.querySelector('.roundresults');
+        const displayresults = document.createElement("p");
+        displayresults.textContent = playRound(playerSelection,computerSelection);
+        resultsdiv.appendChild(displayresults);
+        
     })
 });
-
-//buttons.forEach((button) => {
-  //  buttonElement.addEventListener('click', () => {
-  //      const playerSelection = document.querySelector()
-  //      playRound(playerSelection, computerSelection);
-  //  });
-// });
 
 // Function that plays a single round and returns a win/loss message 
 
@@ -86,4 +82,4 @@ function gameWin(playerScore, computerScore) {
     }
 }
 
-console.log(game());
+//console.log(game());
