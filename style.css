@@ -1,8 +1,18 @@
+.title {
+    font-size:100px; 
+    color: blue;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
 button {
     background-color: white;
-    color: rgb(255, 0, 0);
+    color: blue;
     padding: 30px 64px;
-    border: solid 3px red;
+    border: solid 3px blue;
     border-radius: 20px;
 }
 
