@@ -27,31 +27,35 @@ playerInputButtons.forEach((button) => {
     button.addEventListener('click', (e) => {
         const playerSelection = button.id;
         let computerSelection = computerPlay();  
-        console.log(playerSelection);
-        console.log(computerSelection);
         console.log(playRound(playerSelection,computerSelection));
+        if (playerScore === 5 || computerScore === 5) {
+        }
     })
 });
+
+const roundResults = document.querySelector('.roundresults');
+const resultsText = document.createElement('p');
+roundResults.appendChild(resultsText);
 
 // Function that plays a single round and returns a win/loss message 
 
 function playRound (playerSelection, computerSelection) {
     if (playerSelection == "rock" && computerSelection == "scissors") {
-        return `You win! Rock beats Scissors!, your score is now ${++playerScore}`;
+       return resultsText.textContent = `You win! Rock beats Scissors!, your score is now ${++playerScore}`;
     } else if (playerSelection == "scissors" && computerSelection == "paper") {
-        return `You win! Scissors beats Rock!, your score is now ${++playerScore}`;
+       return resultsText.textContent = `You win! Scissors beats Rock!, your score is now ${++playerScore}`;
     } else if (playerSelection == "paper" && computerSelection == "rock") {
-        return `You win! Paper beats Rock!, your score is now ${++playerScore}`;
+       return resultsText.textContent = `You win! Paper beats Rock!, your score is now ${++playerScore}`;
     } else if (playerSelection == "scissors" && computerSelection == "rock") {
-        return `You lose! Rock beats Scissors!, the computer's score is now ${++computerScore}`;
+        return resultsText.textContent = `You lose! Rock beats Scissors!, the computer's score is now ${++computerScore}`;
     } else if (playerSelection == "paper" && computerSelection == "scissors") {
-        return `You lose! Scissors beats Paper!, the computer's score is now ${++computerScore}`;
+       return  resultsText.textContent = `You lose! Scissors beats Paper!, the computer's score is now ${++computerScore}`;
     } else if (playerSelection == "rock" && computerSelection == "paper") {
-        return `You lose! Paper beats Rock!, the computer's score is now ${++computerScore}`;
+        return resultsText.textContent = `You lose! Paper beats Rock!, the computer's score is now ${++computerScore}`;
     } else if (playerSelection == computerSelection) {
-       return  `It's a tie! You both drew the same move, your score is now ${++playerScore} and the computer's is ${++computerScore}`;
+        return resultsText.textContent = `It's a tie! You both drew the same move, your score is now ${++playerScore} and the computer's is ${++computerScore}`;
     } else {
-       return `Invalid move! So we are giving this to the the computer whose score is now ${++computerScore}`;
+       return resultsText.textContent = `Invalid move! So we are giving this to the the computer whose score is now ${++computerScore}`;
     }
 }
 
