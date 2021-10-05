@@ -9,7 +9,6 @@ do {
 
 // Global variables in order to pass parameters to the functions.
 
- let computerSelection = computerPlay();   
  let playerScore = 0;
  let computerScore = 0;
 
@@ -27,12 +26,10 @@ const playerButtonElement = document.getElementById('btn');
 playerInputButtons.forEach((button) => {
     button.addEventListener('click', (e) => {
         const playerSelection = button.id;
-        //playRound(playerSelection,computerSelection);
-        const resultsdiv = document.querySelector('.roundresults');
-        const displayresults = document.createElement("p");
-        displayresults.textContent = playRound(playerSelection,computerSelection);
-        resultsdiv.appendChild(displayresults);
-        
+        let computerSelection = computerPlay();  
+        console.log(playerSelection);
+        console.log(computerSelection);
+        console.log(playRound(playerSelection,computerSelection));
     })
 });
 
@@ -58,7 +55,7 @@ function playRound (playerSelection, computerSelection) {
     }
 }
 
-//console.log(playRound(playerSelection, computerSelection));
+
 
 //function game() {
 
