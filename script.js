@@ -22,6 +22,9 @@ function computerPlay() {
 
 const playerInputButtons = document.querySelectorAll('button');
 const playerButtonElement = document.getElementById('btn');
+const playerResult = document.querySelector('.updatePS');
+const computerResult = document.querySelector('.updateCS');
+
 
 playerInputButtons.forEach((button) => {
     button.addEventListener('click', (e) => {
@@ -41,7 +44,7 @@ roundResults.appendChild(resultsText);
 
 function playRound (playerSelection, computerSelection) {
     if (playerSelection == "rock" && computerSelection == "scissors") {
-       return resultsText.textContent = `You win! Rock beats Scissors!, your score is now ${++playerScore}`;
+        return resultsText.textContent = `You win! Rock beats Scissors!, your score is now ${++playerScore}`;
     } else if (playerSelection == "scissors" && computerSelection == "paper") {
        return resultsText.textContent = `You win! Scissors beats Rock!, your score is now ${++playerScore}`;
     } else if (playerSelection == "paper" && computerSelection == "rock") {
