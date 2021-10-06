@@ -1,7 +1,8 @@
 Live demo here:
-https://awadhym.github.io/Rock-Paper-Scissors
+https://awadhym.github.io/Rock-Paper-Scissors (GUI version
 
-Rock Paper Scissors project. Currently just in console but will have GUI soon. 
+Rock Paper Scissors project.
+Console version
 Date and time started: 19/09/2021, 12:00 
 Date and time completed: 20/09/21 aproximately 7 hours of work 
 
