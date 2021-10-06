@@ -26,14 +26,15 @@ do {
 
  let playerScore = 0;
  let computerScore = 0;
- 
+ playerResult.textContent =   `${playerScore}`;
+ computerResult.textContent = `${computerScore}`;
 
  function checkWinner() {
  if (playerScore === 5 && playerScore > computerScore) {
-     resultsText.textContent = 'Congratulations you have beaten the computer.'
+     resultsText.textContent = 'Congratulations you have won the game.'
      replaybutton.textContent = 'Play again';
  } else if (computerScore === 5 && computerScore > playerScore) {
-    resultsText.textContent = 'You lost. But failure is the stepping stone to success.'
+    resultsText.textContent = 'You lost this game. But failure is the stepping stone to success.'
     replaybutton.textContent = 'Play again';
  } else if (playerScore === 5 && computerScore === 5) {
     resultsText.textContent = 'You have met a worthy adversary and tied.'
@@ -88,25 +89,25 @@ function endGame() {
 
 function playRound (playerSelection, computerSelection) {
     if (playerSelection == 'rock' && computerSelection == 'scissors') {
-       resultsText.textContent = 'You win! Rock beats Scissors!';
+       resultsText.textContent = 'Round win! Rock beats Scissors!';
        playerResult.textContent = `${++playerScore}`;
     } else if (playerSelection == 'scissors' && computerSelection == 'paper') {
-       resultsText.textContent = 'You win! Scissors beats Rock!';
+       resultsText.textContent = 'Round win! Scissors beats Rock!';
        playerResult.textContent = `${++playerScore}`
     } else if (playerSelection == 'paper' && computerSelection == 'rock') {
-       resultsText.textContent = 'You win! Paper beats Rock!';
+       resultsText.textContent = 'Round win! Paper beats Rock!';
        playerResult.textContent = `${++playerScore}`
     } else if (playerSelection == 'scissors' && computerSelection == 'rock') {
-        resultsText.textContent = 'You lose! Rock beats Scissors!';
+        resultsText.textContent = 'Round loss! Rock beats Scissors!';
         computerResult.textContent = `${++computerScore}`;
     } else if (playerSelection == 'paper' && computerSelection == 'scissors') {
-       resultsText.textContent = 'You lose! Scissors beats Paper!';
+       resultsText.textContent = 'Round loss! Scissors beats Paper!';
        computerResult.textContent = `${++computerScore}`;
     } else if (playerSelection == 'rock' && computerSelection == 'paper') {
-        resultsText.textContent = 'You lose! Paper beats Rock!';
+        resultsText.textContent = 'Round loss! Paper beats Rock!';
         computerResult.textContent = `${++computerScore}`;
     } else if (playerSelection == computerSelection) {
-        resultsText.textContent = 'It\'s a tie! You both drew the same move.';
+        resultsText.textContent = 'It\'s a round tie! You both drew the same move.';
         computerResult.textContent = `${++computerScore}`;
         playerResult.textContent = `${++playerScore}`;
     } 
