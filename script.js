@@ -15,18 +15,12 @@ const playerButtonElement = document.getElementById('btn');
 const playerResult = document.querySelector('.updatePS');
 const computerResult = document.querySelector('.updateCS');
 
-
-
-
-
-
 // loop for the alert
 let i = 0;
 do {
     alert('Welcome to my game of Rock Paper Scissors. You will be playing against a computer opponent!')
  i++;
 } while (i < 1);
-
 
 // Global variables in order to pass parameters to the functions.
 
@@ -70,7 +64,6 @@ function playGame(e) {
     checkWinner();
     endGame();
 }
-
 
 //replay button
 
