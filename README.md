@@ -1,5 +1,5 @@
 Live demo here:
-https://awadhym.github.io/Rock-Paper-Scissors (GUI version
+https://awadhym.github.io/Rock-Paper-Scissors (GUI version)
 
 Rock Paper Scissors project.
 Console version
