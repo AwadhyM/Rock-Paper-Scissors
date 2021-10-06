@@ -37,13 +37,13 @@ do {
  function checkWinner() {
  if (playerScore === 5 && playerScore > computerScore) {
      resultsText.textContent = 'Congratulations you have beaten the computer.'
-     replaybutton.textContent = 'Try again';
+     replaybutton.textContent = 'Play again';
  } else if (computerScore === 5 && computerScore > playerScore) {
     resultsText.textContent = 'You lost. But failure is the stepping stone to success.'
-    replaybutton.textContent = 'Try again';
+    replaybutton.textContent = 'Play again';
  } else if (playerScore === 5 && computerScore === 5) {
     resultsText.textContent = 'You have met a worthy adversary and tied.'
-    replaybutton.textContent = 'Try again';
+    replaybutton.textContent = 'Play again';
  }
 }
 
