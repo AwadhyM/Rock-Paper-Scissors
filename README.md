@@ -10,3 +10,5 @@ Lessons learned from console version. This project has really helped me understa
 06/10/2021:
 
 Added GUI to this project. Learnt how to create and use branches on git version control. Also how to add and remove event listners with named functions, and how to manipulate the DOM. 
+
+Have also realised that I need to work on the quality of my git commits and if I am pushing to branch (I think I am doing it too frequently).
